@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dialog Box Testing</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#dialog" ).dialog({
+      hide: { effect: "fadeOut", duration: 5 }
+    });
+  } );
+
+  $("#dialog").position({
+    my: "left bottom",
+    at: "left bottom",
+    of: "targetElement"
+    }
+
+  )
+  </script>
+</head>
+<body>
+
+<script>
+  document.getElementById("name").innerHTML = value;
+</script>
+<h3>Testing Diolog Box</h3>
+<div id="dialog" title="Wow!">
+  <p>End-User: "name"</p>
+  <p>End-User: Information</p>
+</div>
+
+
+</body>
+</html>
